@@ -1,0 +1,111 @@
+.wbf-page {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #f7f8fa;
+  min-height: 100vh;
+}
+
+.wbf-hero {
+  background: linear-gradient(rgba(15, 41, 66, 0.2), rgba(16, 73, 63, 0.2)),
+    url("/whistleblower-banner.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px 40px;
+}
+
+.wbf-hero h1 {
+  margin: 0 0 8px;
+  font-size: 2.2rem;
+}
+
+.wbf-breadcrumb {
+  color: #cfe3df;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.wbf-container {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+.wbf-card {
+  background: #fff;
+  border: 1px solid #e2e5e9;
+  border-radius: 8px;
+  padding: 36px;
+  text-align: center;
+}
+
+.wbf-card h2 {
+  margin-top: 0;
+  color: #0f2942;
+}
+
+.wbf-card > p {
+  line-height: 1.7;
+  color: #444;
+}
+
+.wbf-download-btn {
+  display: inline-block;
+  background: #0f6b57;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 14px 34px;
+  border-radius: 6px;
+  margin: 18px 0 28px;
+  transition: background 0.2s ease;
+}
+
+.wbf-download-btn:hover {
+  background: #0c5646;
+}
+
+.wbf-guidelines {
+  text-align: left;
+  background: #f1f7f6;
+  border-left: 4px solid #0f6b57;
+  padding: 18px 22px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.wbf-guidelines h3 {
+  margin: 0 0 10px;
+  color: #0f6b57;
+}
+
+.wbf-guidelines p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.wbf-guidelines a {
+  color: #0f6b57;
+  font-weight: 600;
+}
+
+.wbf-policy-link {
+  margin-top: 24px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.wbf-policy-link a {
+  color: #0f6b57;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .wbf-hero h1 {
+    font-size: 1.6rem;
+  }
+  .wbf-card {
+    padding: 22px;
+  }
+}

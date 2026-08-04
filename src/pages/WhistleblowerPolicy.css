@@ -1,0 +1,76 @@
+.wp-page {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #f7f8fa;
+  min-height: 100vh;
+}
+
+
+  .wp-hero {
+  background: linear-gradient(rgba(15, 41, 66, 0.2), rgba(16, 73, 63, 0.2)),
+    url("/whistleblower-banner.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 70px 20px 60px;
+}
+
+.wp-hero h1 {
+  margin: 0 0 8px;
+  font-size: 2.2rem;
+}
+
+.wp-breadcrumb {
+  color: #cfe3df;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.wp-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px 80px;
+}
+
+.wp-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.wp-download-btn {
+  display: inline-block;
+  background: #0f6b57;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.wp-download-btn:hover {
+  background: #0c5646;
+}
+
+.wp-pdf-frame {
+  background: #fff;
+  border: 1px solid #e2e5e9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.wp-pdf-frame iframe {
+  border: none;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .wp-hero h1 {
+    font-size: 1.6rem;
+  }
+  .wp-pdf-frame iframe {
+    height: 500px;
+  }
+}

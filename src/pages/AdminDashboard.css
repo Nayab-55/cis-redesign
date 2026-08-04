@@ -1,0 +1,253 @@
+.ad-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+.ad-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e5e8ea;
+  margin-bottom: 40px;
+}
+
+.ad-eyebrow {
+  margin: 0 0 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0f6b57;
+}
+
+.ad-title {
+  margin: 0;
+  font-size: 1.9rem;
+  color: #0f2942;
+}
+
+.ad-logout-btn {
+  background: linear-gradient(135deg, #0f2942, #0f6b57);
+  color: #fff;
+  border: none;
+  padding: 11px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.ad-logout-btn:hover {
+  opacity: 0.9;
+}
+
+.ad-section {
+  margin-bottom: 56px;
+}
+
+.ad-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.ad-section-bar {
+  width: 4px;
+  height: 34px;
+  background: #0f6b57;
+  border-radius: 2px;
+}
+
+.ad-section-label {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.ad-section-title {
+  margin: 2px 0 0;
+  font-size: 1.4rem;
+  color: #0f2942;
+}
+
+.ad-card,
+.ad-table-card {
+  background: #f8faf9;
+  border: 1px solid #e5e8ea;
+  border-radius: 10px;
+  padding: 26px;
+  margin-bottom: 20px;
+}
+
+.ad-card-title {
+  margin: 0 0 18px;
+  font-size: 1.1rem;
+  color: #0f2942;
+}
+
+.ad-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.ad-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.ad-field-full {
+  grid-column: 1 / -1;
+}
+
+.ad-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.ad-field input,
+.ad-field textarea {
+  border: 1px solid #dfe3e7;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  background: #fff;
+  resize: vertical;
+}
+
+.ad-field input:focus,
+.ad-field textarea:focus {
+  outline: none;
+  border-color: #0f6b57;
+  box-shadow: 0 0 0 3px rgba(15, 107, 87, 0.12);
+}
+
+.ad-form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.ad-primary-btn {
+  background: linear-gradient(135deg, #0f2942, #0f6b57);
+  color: #fff;
+  border: none;
+  padding: 11px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.ad-primary-btn:hover {
+  opacity: 0.9;
+}
+
+.ad-secondary-btn {
+  background: #fff;
+  color: #555;
+  border: 1px solid #ccc;
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ad-secondary-btn:hover {
+  background: #f0f0f0;
+}
+
+.ad-table-wrap {
+  overflow-x: auto;
+}
+
+.ad-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.ad-table th {
+  text-align: left;
+  padding: 10px 12px;
+  background: #eef3f2;
+  color: #0f2942;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 2px solid #dfe3e7;
+}
+
+.ad-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eceef0;
+  vertical-align: top;
+}
+
+.ad-table tr:hover td {
+  background: #f5f9f8;
+}
+
+.ad-status-badge {
+  display: inline-block;
+  background: #e5f2ef;
+  color: #0f6b57;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.ad-edit-btn {
+  background: #eef3fb;
+  color: #1565c0;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.ad-edit-btn:hover {
+  background: #dbe8fa;
+}
+
+.ad-delete-btn {
+  background: #fdecea;
+  color: #c62828;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.ad-delete-btn:hover {
+  background: #fad7d4;
+}
+
+@media (max-width: 700px) {
+  .ad-form {
+    grid-template-columns: 1fr;
+  }
+  .ad-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+}
