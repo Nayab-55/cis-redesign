@@ -38,7 +38,7 @@ function Products() {
   const [selectedCategory, setSelectedCategory] = useState("All Products");
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/products")
+    fetch(`${import.meta.env.VITE_API_URL}/api/products`)
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error("Error fetching products:", error));
@@ -178,7 +178,7 @@ function Products() {
                 }}
               >
                 <img
-                  src={`http://127.0.0.1:8000/images/products/${product.image}`}
+                 src={`${import.meta.env.VITE_API_URL}/images/products/${product.image}`}
                   alt={product.name}
                   style={{ width: "100%", height: "180px", objectFit: "cover" }}
                 />

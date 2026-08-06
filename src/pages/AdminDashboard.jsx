@@ -30,7 +30,7 @@ function AdminDashboard() {
     if (!hasLoggedVisit.current) {
     hasLoggedVisit.current = true;
 
-    fetch("http://127.0.0.1:8000/api/log-visit", {
+   fetch(`${import.meta.env.VITE_API_URL}/api/log-visit`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -50,14 +50,14 @@ function AdminDashboard() {
 }, [navigate]);
 
   const fetchProducts = () => {
-    fetch("http://127.0.0.1:8000/api/products")
+    fetch(`${import.meta.env.VITE_API_URL}/api/products`)
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error("Error fetching products:", error));
   };
   const fetchContacts = () => {
     const token = localStorage.getItem("admin_token");
-    fetch("http://127.0.0.1:8000/api/contacts", {
+   fetch(`${import.meta.env.VITE_API_URL}/api/contacts`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -68,7 +68,7 @@ function AdminDashboard() {
   };
   const fetchPartners = () => {
     const token = localStorage.getItem("admin_token");
-    fetch("http://127.0.0.1:8000/api/partners", {
+    fetch(`${import.meta.env.VITE_API_URL}/api/partners`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -78,7 +78,7 @@ function AdminDashboard() {
       .catch((error) => console.error("Error fetching partners:", error));
   };
   const fetchTenders = () => {
-    fetch("http://127.0.0.1:8000/api/tenders")
+    fetch(`${import.meta.env.VITE_API_URL}/api/tenders`)
       .then((response) => response.json())
       .then((data) => setTenders(data))
       .catch((error) => console.error("Error fetching tenders:", error));
@@ -96,8 +96,8 @@ function AdminDashboard() {
     const token = localStorage.getItem("admin_token");
 
     const url = isEditingTender
-      ? `http://127.0.0.1:8000/api/tenders/${tenderFormData.id}`
-      : "http://127.0.0.1:8000/api/tenders";
+      ? `${import.meta.env.VITE_API_URL}/api/tenders/${tenderFormData.id}`
+: `${import.meta.env.VITE_API_URL}/api/tenders`;
     const method = isEditingTender ? "PUT" : "POST";
 
     try {
@@ -138,7 +138,7 @@ function AdminDashboard() {
 
     const token = localStorage.getItem("admin_token");
     try {
-      const response = await fetch(`http://127.0.0.1:8000/api/tenders/${id}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/tenders/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -162,7 +162,7 @@ function AdminDashboard() {
 
     const token = localStorage.getItem("admin_token");
     try {
-      const response = await fetch(`http://127.0.0.1:8000/api/contacts/${id}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contacts/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -181,7 +181,7 @@ const handlePartnerDelete = async (id) => {
 
     const token = localStorage.getItem("admin_token");
     try {
-      const response = await fetch(`http://127.0.0.1:8000/api/partners/${id}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/partners/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -200,8 +200,8 @@ const handlePartnerDelete = async (id) => {
     const token = localStorage.getItem("admin_token");
 
     const url = isEditing
-      ? `http://127.0.0.1:8000/api/products/${formData.id}`
-      : "http://127.0.0.1:8000/api/products";
+      ? `${import.meta.env.VITE_API_URL}/api/products/${formData.id}`
+: `${import.meta.env.VITE_API_URL}/api/products`;
     const method = isEditing ? "PUT" : "POST";
 
     try {
@@ -240,7 +240,7 @@ const handlePartnerDelete = async (id) => {
 
     const token = localStorage.getItem("admin_token");
     try {
-      const response = await fetch(`http://127.0.0.1:8000/api/products/${id}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/products/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -264,7 +264,7 @@ const handlePartnerDelete = async (id) => {
     const token = localStorage.getItem("admin_token");
 
     try {
-      await fetch("http://127.0.0.1:8000/api/logout", {
+      await fetch(`${import.meta.env.VITE_API_URL}/api/logout`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

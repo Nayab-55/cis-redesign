@@ -3,7 +3,7 @@ function TenderTable() {
   const [tenders, setTenders] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/tenders")
+   fetch(`${import.meta.env.VITE_API_URL}/api/tenders`)
       .then((response) => response.json())
       .then((data) => setTenders(data))
       .catch((error) => console.error("Error fetching tenders:", error));

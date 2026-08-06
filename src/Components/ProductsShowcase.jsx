@@ -21,7 +21,7 @@ function ProductsShowcase() {
 
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/products")
+    fetch(`${import.meta.env.VITE_API_URL}/api/products`)
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error("Error fetching products:", error));
@@ -57,7 +57,7 @@ function ProductsShowcase() {
           <div className="product-item" key={index}>
             
             <img
-      src={`http://127.0.0.1:8000/images/products/${product.image}`}
+      src={`${import.meta.env.VITE_API_URL}/images/products/${product.image}`}
       alt={product.name}
     />
           </div>
