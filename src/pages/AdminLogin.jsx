@@ -1,7 +1,7 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import TopBar from "../components/TopBar";
-import Navbar from "../components/Navbar";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
+import TopBar from "../Components/TopBar";
+import Navbar from "../Components/Navbar";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "./AdminLogin.css";

@@ -1,9 +1,9 @@
-import TopBar from "../components/TopBar";
-import Header from "../components/Header";
-import Navbar from "../components/Navbar";
-import PageBanner from "../components/PageBanner";
-import AgroCureContent from "../components/AgroCureContent";
-import Footer from "../components/Footer";
+import TopBar from "../Components/TopBar";
+import Header from "../Components/Header";
+import Navbar from "../Components/Navbar";
+import PageBanner from "../Components/PageBanner";
+import AgroCureContent from "../Components/AgroCureContent";
+import Footer from "../Components/Footer";
 
 function AgroCure() {
   return (

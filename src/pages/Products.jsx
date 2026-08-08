@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import TopBar from "../components/TopBar";
-import Header from "../components/Header";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import TopBar from "../Components/TopBar";
+import Header from "../Components/Header";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import heroImage from "../assets/productbanner2.png";
 
 // Maps product names from the database to their existing detail page routes

@@ -1,13 +1,13 @@
-import TopBar from "../components/TopBar";
-import Header from "../components/Header";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import Mission from "../components/Mission";
+import TopBar from "../Components/TopBar";
+import Header from "../Components/Header";
+import Navbar from "../Components/Navbar";
+import Hero from "../Components/Hero";
+import Mission from "../Components/Mission";
 import Clients from "../Components/Clients";
-import WhyChooseUs from "../components/WhyChooseUs";
-import ProductsShowcase from "../components/ProductsShowcase";
-import Stats from "../components/Stats";
-import Footer from "../components/Footer";
+import WhyChooseUs from "../Components/WhyChooseUs";
+import ProductsShowcase from "../Components/ProductsShowcase";
+import Stats from "../Components/Stats";
+import Footer from "../Components/Footer";
 
 function Home() {
   return (
