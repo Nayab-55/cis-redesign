@@ -4,7 +4,7 @@ import TopBar from "../Components/TopBar";
 import Header from "../Components/Header";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import heroImage from "../assets/productbanner2.png";
+import heroImage from "../assets/Productbanner2.png";
 
 // Maps product names from the database to their existing detail page routes
 const routeMap = {
