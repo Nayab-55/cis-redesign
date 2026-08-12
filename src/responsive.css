@@ -168,7 +168,7 @@ img {
 
   .navbar {
   position: sticky !important;
-  top: 62px !important;
+ top: var(--topbar-height, 62px) !important;
   justify-content: flex-start !important;
   padding: 10px 16px !important;
 }
