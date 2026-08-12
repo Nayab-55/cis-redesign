@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
 
 function Navbar() {
@@ -25,11 +25,11 @@ function Navbar() {
       </button>
 
       <ul className={mobileMenuOpen ? "nav-open" : ""}>
-        <li><Link to="/" onClick={closeAll}>Home</Link></li>
-        <li><Link to="/products" onClick={closeAll}>Products</Link></li>
-        <li><Link to="/tender" onClick={closeAll}>Tenders</Link></li>
-        <li><Link to="/about" onClick={closeAll}>About Us</Link></li>
-        <li><Link to="/contact" onClick={closeAll}>Contact</Link></li>
+        <li><NavLink to="/" onClick={closeAll}>Home</NavLink></li>
+        <li><NavLink to="/products" onClick={closeAll}>Products</NavLink></li>
+        <li><NavLink to="/tender" onClick={closeAll}>Tenders</NavLink></li>
+        <li><NavLink to="/about" onClick={closeAll}>About Us</NavLink></li>
+        <li><NavLink to="/contact" onClick={closeAll}>Contact</NavLink></li>
         <li className="dropdown">
           <span onClick={() => setShowWhistleDropdown(!showWhistleDropdown)}>
             Whistleblower

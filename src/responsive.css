@@ -168,7 +168,7 @@ img {
 
   .navbar {
   position: sticky !important;
-  top: 60px !important;
+  top: 62px !important;
   justify-content: flex-start !important;
   padding: 10px 16px !important;
 }
@@ -246,5 +246,12 @@ img {
   }
   .dropdown-menu li {
     border-bottom: 1px solid #333 !important;
+  }
+}
+/* Highlight the currently active page in the mobile menu */
+@media (max-width: 768px) {
+  .navbar > ul li a.active {
+    color: #38bdf8 !important;
+    font-weight: 700 !important;
   }
 }
