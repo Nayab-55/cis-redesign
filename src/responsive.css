@@ -1,11 +1,15 @@
 /* Global mobile responsiveness patch */
 
 /* Prevent horizontal scrolling/cut-off content on any page */
-html, body {
+html {
   overflow-x: hidden;
   max-width: 100%;
 }
 
+body {
+  overflow-x: clip;
+  max-width: 100%;
+}
 /* Make all images shrink to fit their container instead of overflowing */
 img {
   max-width: 100%;
@@ -129,6 +133,9 @@ img {
     text-align: center !important;
     padding: 12px 16px !important;
     gap: 4px !important;
+    position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
   }
   .topbar span {
     display: block !important;
@@ -160,10 +167,11 @@ img {
   }
 
   .navbar {
-    position: relative !important;
-    justify-content: flex-start !important;
-    padding: 10px 16px !important;
-  }
+  position: sticky !important;
+  top: 60px !important;
+  justify-content: flex-start !important;
+  padding: 10px 16px !important;
+}
 
   
  .navbar > ul {

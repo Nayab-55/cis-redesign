@@ -72,7 +72,7 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 10px 60px;
+  padding: 20px 60px;
   font-size: 13px;
 }
 .hero {
@@ -398,7 +398,7 @@
 }
 
 .footer-bottom {
-  background-color: #0b3d91;
+  background-color: #0f766e;
   color: white;
   text-align: center;
   padding: 15px;
